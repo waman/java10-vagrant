@@ -3,4 +3,4 @@
 #apt-get update
 #apt-get -y upgrade
 
-apt-get -y install wget unzip
+apt-get -y install wget
