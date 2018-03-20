@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-for f in /vagrant/archive/*jdk*_linux-x64_bin.tar.gz; do
+for f in /vagrant/archive/*jdk*_linux-x64_bin_ri.tar.gz; do
   jdk=$f
 done
 
-if [[ $jdk == "/vagrant/archive/*jdk*_linux-x64_bin.tar.gz" ]]; then
-  defaultjdk=openjdk-10+46_linux-x64_bin.tar.gz
-  wget -q -O /vagrant/archive/${defaultjdk} https://download.java.net/java/jdk10/archive/46/GPL/$defaultjdk
+if [[ $jdk == "/vagrant/archive/*jdk*_linux-x64_bin_ri.tar.gz" ]]; then
+  defaultjdk=openjdk-10+44_linux-x64_bin_ri.tar.gz
+  wget -q -O /vagrant/archive/${defaultjdk} https://download.java.net/openjdk/jdk10/ri/${defaultjdk}
   jdk=/vagrant/archive/${defaultjdk}
 else
   :
