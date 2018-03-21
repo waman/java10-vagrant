@@ -5,8 +5,8 @@ for f in /vagrant/archive/*jdk*_linux-x64_bin*.tar.gz; do
 done
 
 if [[ $jdk == "/vagrant/archive/*jdk*_linux-x64_bin*.tar.gz" ]]; then
-  defaultjdk=openjdk-10+44_linux-x64_bin_ri.tar.gz
-  wget -q -O /vagrant/archive/${defaultjdk} https://download.java.net/openjdk/jdk10/ri/${defaultjdk}
+  defaultjdk=openjdk-10_linux-x64_bin.tar.gz
+  wget -q -O /vagrant/archive/${defaultjdk} https://download.java.net/java/GA/jdk10/10/binaries/${defaultjdk}
   jdk=/vagrant/archive/${defaultjdk}
 else
   :
